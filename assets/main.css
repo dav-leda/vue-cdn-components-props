@@ -1,0 +1,55 @@
+
+@import "./reset.css";
+
+@import "./atomic.css";
+
+@import "./semantic.css";
+
+
+:root {
+  --primary-color: #302AE6;
+  --secondary-color: #536390;
+  --font-color: #424242;
+  --bg-color: rgb(248, 246, 246);
+  --heading-color: #292922;
+  --font-size: 1.5rem;
+}
+
+:root.dark {
+  --primary-color: #dfdfec;
+  --secondary-color: #c5cfe9;
+  --font-color: #e1e1ff;
+  --bg-color: #2b2b41;
+  --heading-color: #d3d8e5;
+}
+
+body {
+  font-family: Ubuntu, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-size: calc(1rem + 0.25vh);
+  transition: all 0.5s ease;
+}
+
+#app {
+  max-width: calc(var(--font-size) * 24);
+  margin: 3rem auto;
+}
+
+@media screen and (min-width: 1000px) {
+  section {
+    max-width: calc(var(--font-size) * 40);
+  }
+}
+
+@media screen and (max-width:600px) and (min-width: 470px) {
+  :root {
+    --font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 469px) {
+  :root {
+    --font-size: 0.8rem;
+  }
+}

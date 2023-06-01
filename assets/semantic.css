@@ -1,0 +1,33 @@
+
+
+
+h1, h2 {
+  color: var(--heading-color);
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: calc(var(--font-size) * 1.4)
+}
+
+h2 {
+  font-size: calc(var(--font-size) * 1.2)
+}
+
+p {
+  color: var(--font-color)
+  line-height: 1.7;
+  font-size: calc(var(--font-size) * 1)
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  font-weight: bold;
+}
+
+a:hover {
+  border-bottom: 3px solid currentColor;
+}
+

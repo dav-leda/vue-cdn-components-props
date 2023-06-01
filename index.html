@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Vue CDN - Componentes</title>
+
+  <link rel="stylesheet" href="assets/main.css">
+
+   <!-- Al usar modulos (type="module") no es necesario importar
+  la librería de Vue en index.html  -->
+
+  <!-- Al usar el atributo defer no es necesario poner el script 
+  al final del body -->
+
+  <script type="module" src="main.js" defer></script>
+
+</head>
+
+<body>
+
+  <div id="app">
+
+    <h1 class="center u">Vue CDN - Componentes</h1>
+
+    <!-- Dentro de index.html hay que usar kebab-case 
+    tanto para los nombres de los componentes 
+    compo para las props -->
+    <!-- Para la data se puede usar camelCase -->
+
+    <componente-uno :colors-prop="colorsData"/>
+
+  </div>
+  
+</body>
+</html>
